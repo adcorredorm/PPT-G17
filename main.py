@@ -1,20 +1,8 @@
-PIEDRA = '🪨'
-PAPEL = '🍃'
-TIJERA = '✀'
+from jugadas import PIEDRA, PAPEL, TIJERA
+from jugador import *
+from oponente import *
 
 def instrucciones(rondas:int):
-    pass
-
-def leer_baraja(tamano:int) -> list:
-    pass
-
-def baraja_oponente(tamano:int) -> list:
-    pass
-
-def leer_jugada(baraja:list) -> str:
-    pass
-
-def jugada_oponente(baraja:list) -> str:
     pass
 
 def jugar(j1:str, j2:str) -> int:
@@ -25,8 +13,13 @@ def jugar(j1:str, j2:str) -> int:
     """
     pass
 
-def imprimir_ganador(j1:int, j2:int):
-    pass
+def imprimir_ganador(contador1:int, contador2:int):
+    if contador1 < contador2:
+        return print("¡Ha ganado el jugador 2!")
+    elif contador1 > contador2:
+        return print("¡Ha ganado el jugador 1!")
+    elif contador1 == contador2:
+        return print("¡Empate!")
 
 
 def main():

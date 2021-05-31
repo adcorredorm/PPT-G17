@@ -1,0 +1,3 @@
+PIEDRA = '🪨'
+PAPEL = '🍃'
+TIJERA = '✀'
